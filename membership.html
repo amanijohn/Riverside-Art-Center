@@ -7,42 +7,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <a href="index.html">Riverside Art Center</a>
-        </div>
-        <ul class="nav-links">
-            <li class="dropdown">
-                <a href="artists.html">Artists</a>
-                <div class="dropdown-content">
-                    <a href="#">Apply to Showcase</a>
-                    <a href="#">Find a Sponsor</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="events.html">Events</a>
-                <div class="dropdown-content">
-                    <a href="#">Classes</a>
-                    <a href="#">Events</a>
-                    <a href="#">Exhibits</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="membership.html">Memberships</a>
-                <div class="dropdown-content">
-                    <a href="#">Become a Member</a>
-                    <a href="#">Donate</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="about.html">About</a>
-                <div class="dropdown-content">
-                    <a href="#">Our History</a>
-                    <a href="#">Contact Us</a>
-                </div>
-            </li>
+    <header class="nav">
+        <a href="index.html" class="logo"><img src="riverside-logo.png" alt="Riverside Logo" width="auto" height="auto"></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a href="artists.html">Artists</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="membership.html">Memberships</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="donate-button"><a href="#">Donate</a></li>
         </ul>
-    </nav>
+      </header>
     <section class="membership-header">
         <img src="memberships.jpg" width="1420px" height="618px" alt="Adults in Art Class">
         <div class="membership-container">
@@ -61,6 +37,7 @@
         </div>
     </div>
     </section>
+    <div class="membership-info-containter">
     <section class="benefits-content">
         <h2>Benefits</h2>
         <p>All members gain access to:</p>
@@ -107,13 +84,14 @@
             </div>
         </div>
     </section>
+    </div>
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-links">
                 <ul>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="artists.html">Our Artists</a></li>
-                    <li><a href="memberships.html">Memberships</a></li>
+                    <li><a href="membership.html">Memberships</a></li>
                     <li><a href="events.html">Events</a></li>
                 </ul>
             </div>
@@ -124,15 +102,15 @@
                 <p>SATURDAY 10:00AM — 2:00PM</p>
             </div>
             <div class="footer-info">
-                <p><strong>Phone:<br>(419) 738-2352</p>
-                <p><strong>Email:<br>riversideartcenter@gmail.com</p>
+                <p>Phone:<br>(419) 738-2352</p>
+                <p>Email:<br>riversideartcenter@gmail.com</p>
             </div>
         </div>
         <hr class="footer-divider">
         <div class="footer-social">
-            <a href="#"><div class="fab fa-facebook">Facebook</a></div>
-            <a href="#"><div class="fab fa-instagram">Instagram</a></div>
-            <a href="#"><div class="fab fa-youtube">YouTube</a></div>
+            <a href="#"><div class="fb-icon">Facebook</a></div>
+            <a href="#"><div class="ig-icon">Instagram</a></div>
+            <a href="#"><div class="yt-icon">YouTube</a></div>
         </div>
     </footer>
 </body>

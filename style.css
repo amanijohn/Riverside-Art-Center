@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 .secondary-button-filled {
-  width: 460px;
-  height: 58px;
+  width: 28.75rem;
+  height: 3.625rem;
   background-color: #121863;
   border: 0.125rem solid #121863;
   border-radius: 0.3125rem;
@@ -11,13 +11,13 @@
   color: #fff;
   text-decoration: none;
   font-family: "Urbanist", "Arial", sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: bold;
 }
 
 .secondary-button-outline {
-  width: 460px;
-  height: 58px;
+  width: 28.75rem;
+  height: 3.625rem;
   background-color: #fff;
   border: 0.125rem solid #121863;
   border-radius: 0.3125rem;
@@ -26,20 +26,20 @@
   color: #121863;
   text-decoration: none;
   font-family: "Urbanist", "Arial", sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: bold;
 }
 
 body {
   margin: 0 auto;
+  width: 100vw;
   padding: 0;
   font: 1rem/1.5rem "Inter", "Arial", sans-serif;
 }
 
 .container {
-  width: 85%;
+  width: 100vw;
   max-width: 1080px;
-  margin: 1rem auto;
 }
 
 .flex {
@@ -84,22 +84,11 @@ h1 h4, h2 h4, h3 h4, h4 h4 {
 .container-centered {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 1.75rem 0;
 }
 
 .container-uncentered {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 0 3rem 0;
-}
-
-.member-background {
-  width: 100%;
-  height: 24.9rem;
-  background-image: url(member-background.jpg);
-  background-size: cover;
-  background-repeat: none;
 }
 
 button {
@@ -107,239 +96,1294 @@ button {
   margin: 3rem auto;
 }
 
-.navbar {
-  background-color: #ffffff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.625rem 15.625rem;
-  border-bottom: 0.0625rem solid #D6D7DD;
+/*NAVIGATION MAIN STYLE*/
+.nav {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100vw;
+  z-index: 3;
 }
-
-.logo a {
-  font-family: "Urbanist", "Arial", sans-serif;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #121863;
-  text-decoration: none;
-  letter-spacing: 0.1rem;
-}
-
-/* Navigation links */
-.nav-links {
-  list-style: none;
-  display: flex;
-  margin: 0;
+.nav ul {
+  margin: 0 0.5rem;
   padding: 0;
-}
-
-.nav-links li {
-  position: relative;
-  margin: 0 0.9375rem;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #121863;
-  font-size: 1rem;
-  padding: 0.625rem;
-}
-
-/* Drop-down menu */
-.dropdown .dropbtn {
-  background-color: transparent;
-  color: #8B93FF;
-  border: none;
-  cursor: pointer;
-  padding: 0.625rem;
-  font-size: 1rem;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
+  list-style: none;
+  overflow: hidden;
   background-color: #fff;
-  min-width: 160px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  z-index: 1;
 }
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-  cursor: pointer;
-}
-
-.dropdown-content a {
-  color: #000000;
-  padding: 12px 16px;
+.nav li a {
+  display: block;
+  padding: 20px 20px;
   text-decoration: none;
-  display: block;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.nav-links li a:hover {
-  color: #8B93FF;
-}
-
-/*Homepage Styling*/
-.header {
-  padding: 10rem 12.5rem 7rem;
-  display: flex;
-}
-.header h1 {
-  width: 25rem;
-  font-size: 4rem;
-  line-height: 5rem;
-  border-bottom: 0.3125rem solid #8B93FF;
-  padding-bottom: 1.5rem;
-}
-.header p {
-  margin: 0px;
-  line-height: 2rem;
-  width: 495px;
-}
-.header .header-text {
-  padding-right: 65px;
-}
-.header .hero-image {
-  background-color: #8B93FF;
-  width: 900px;
-  height: 600px;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.header-divider {
-  width: 100%;
-  height: 5rem;
-  background-image: url(member-background.jpg);
-  background-size: cover;
-  background-repeat: none;
-}
-
-.exhibits, .events {
-  padding: 4rem 12.5rem;
-}
-
-.event-card {
-  border: none;
-  width: 300px; /* Adjust width to fit your design */
-  text-align: left;
-}
-
-.event-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 30px;
-}
-
-.arrow-link {
-  color: black;
-  text-decoration: none;
-  margin-top: 0.5rem;
-}
-
-.divider {
-  border: none;
-  border-bottom: 0.125rem solid black;
-  margin: 0.75rem 0;
-}
-
-.event-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin-bottom: 0.75rem;
-}
-
-.event-details p {
-  font-size: 0.875rem;
-  margin: 0.25rem 0;
-}
-
-.circle-button {
-  display: flex;
-  background-color: #121863;
-  width: 4.7rem;
-  height: 4.7rem;
-  border-radius: 10rem;
-  justify-content: center;
-  align-items: center;
-}
-
-.circle-button:hover {
-  background-color: #8B93FF;
-}
-
-.become-member {
-  justify-items: right;
-}
-
-.member-solid-background {
-  float: right;
-  margin: 0 11rem;
-  width: 46rem;
-  background-color: #121863;
-  color: #fff;
-}
-.member-solid-background h2 {
-  color: #fff;
-  font-size: 2.25rem;
-  padding: 3rem 5rem 0;
-  text-align: right;
-}
-.member-solid-background p {
-  padding: 0 5rem 1rem;
-  text-align: right;
-}
-
-#email {
-  font-family: "Inter", "Arial", sans-serif;
-  width: 460px;
-  height: 45px;
-  margin-left: 10rem;
-  border: none;
-  background-color: #fff;
-  border-radius: 0.3125rem;
-  font-family: "Inter", "Arial", sans-serif;
-  color: #000;
-  padding-left: 1.5rem;
-}
-
-#submit {
-  display: block;
-  margin-right: 5rem;
   font-family: "Urbanist", "Arial", sans-serif;
-  font-size: 1.125rem;
-  text-align: center;
-  color: #121863;
-  width: 8rem;
-  height: 2.75rem;
-  padding: 0.5rem 1.5rem;
-  border-radius: 0.3125rem;
-  border: none;
-  opacity: 0px;
-  background-color: #D8FAFF;
+  color: #3B429F;
+  font-weight: 600;
 }
-#submit a {
+.nav .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
   text-decoration: none;
-  color: #121863;
-}
-#submit a:hover {
-  font-weight: bold;
 }
 
-#submit:hover {
-  cursor: pointer;
-  background-color: #8B93FF;
+.nav li a:hover,
+.nav .menu-btn:hover {
+  background-color: #FBFBFF;
+  color: #6156D3;
+  padding-bottom: 1.5rem;
+  border-radius: 0rem 0rem 0.5rem 0.5rem;
 }
 
+/* menu */
+/*mobile responsive design*/
+@media screen and (min-width: 300px) and (max-width: 485px) {
+  body {
+    width: 100vw;
+  }
+  /*navigation items*/
+  .nav img {
+    height: 1.75rem;
+  }
+  /*menu icon*/
+  .nav .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+  }
+  .nav .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+  }
+  .nav .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    width: 18px;
+  }
+  .nav .menu-icon .navicon:before,
+  .nav .menu-icon .navicon:after {
+    background: #333;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    width: 100%;
+  }
+  .nav .menu-icon .navicon:before {
+    top: 5px;
+  }
+  .nav .menu-icon .navicon:after {
+    top: -5px;
+  }
+  /*menu button*/
+  .nav .menu-btn {
+    display: none;
+  }
+  .nav .menu-btn:checked ~ .menu {
+    max-height: 100vh;
+  }
+  .nav .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  .nav .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  .nav .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  .nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  .footer-container {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 3.5rem;
+  }
+  .footer {
+    width: 100%;
+    background-color: #121863;
+    color: white;
+    padding: 0 0 3.5rem 0;
+    font-family: "Urbanist", "Arial", sans-serif;
+    text-align: center;
+  }
+  .footer .footer-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding-right: 2.5rem;
+  }
+  .footer .footer-social a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: "Urbanist", "Arial", sans-serif;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-left: 0rem;
+  }
+  .footer-links ul {
+    list-style: none;
+    margin-right: 0rem;
+  }
+  .footer-contact {
+    text-align: left;
+    padding-left: 2.5rem;
+    line-height: 2rem;
+  }
+  .footer-links ul li {
+    margin-bottom: 0;
+    text-align: left;
+  }
+  .footer-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    line-height: 2rem;
+  }
+  .footer-links ul li a:hover {
+    color: #8B93FF;
+  }
+  .footer-contact p, .footer-info p {
+    margin: 0;
+  }
+  .footer-info {
+    padding-left: 2.5rem;
+    text-align: left;
+    line-height: 2rem;
+  }
+  /*general styling*/
+  p {
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  header {
+    width: 100vw;
+    margin-bottom: 10rem;
+  }
+  /*home*/
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 3rem;
+  }
+  .hero .hero-text {
+    padding: 1rem 1.75rem;
+  }
+  .hero h1 {
+    width: 18rem;
+    border-bottom: 0.2rem solid #8B93FF;
+    line-height: 2rem;
+    padding-bottom: 1rem;
+  }
+  .heroimage img {
+    width: 100vw;
+  }
+  p {
+    font-size: 0.75rem;
+  }
+  h2, h3, h4 {
+    font-size: 1rem;
+    font-family: "Urbanist", "Arial", sans-serif;
+    letter-spacing: 0.1rem;
+    color: #121863;
+  }
+  h2 h1, h3 h1, h4 h1 {
+    font-size: 0.75rem;
+    line-height: 2rem;
+    padding-bottom: 1rem;
+  }
+  h2 h4, h3 h4, h4 h4 {
+    font-size: 1.2rem;
+  }
+  .secondary-button-filled,
+  .secondary-button-outline {
+    width: 18rem;
+    height: 3.25rem;
+    margin: 2.5rem 0 5rem;
+  }
+  .container-centered,
+  .container-uncentered {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .container-centered {
+    flex-direction: column;
+    justify-content: left;
+    gap: 3rem;
+  }
+  .container-uncentered {
+    flex-direction: column;
+    justify-content: left;
+    gap: 3rem;
+  }
+  .event-card {
+    border: none;
+    width: 18rem;
+    text-align: left;
+  }
+  .header {
+    padding: 0;
+    flex-direction: column-reverse;
+  }
+  .header img {
+    width: 100vw;
+  }
+  .header h1 {
+    width: 10rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    border-bottom: 0.25rem solid #8B93FF;
+  }
+  .header h1, .header p {
+    padding: 0 4rem;
+  }
+  .header p {
+    width: 22rem;
+    line-height: 1.75rem;
+  }
+  /*event card*/
+  .exhibits, .events {
+    padding: 0 1.75rem;
+  }
+  .exhibits h2, .events h2 {
+    padding-bottom: 1rem;
+  }
+  .exhibits p, .events p {
+    line-height: 1.5rem;
+  }
+  .events {
+    padding: 1.25rem 2.5rem;
+  }
+  .event-card {
+    border: none;
+    width: 18rem;
+    text-align: left;
+  }
+  .event-card {
+    border: none;
+    width: 18rem;
+    text-align: left;
+  }
+  .event-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2rem;
+  }
+  .arrow-link {
+    color: black;
+    text-decoration: none;
+    margin-top: 0.5rem;
+  }
+  .divider {
+    border: none;
+    border-bottom: 0.125rem solid black;
+    margin: 0.75rem 0;
+  }
+  .event-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 0.75rem;
+  }
+  .event-details p {
+    font-size: 0.875rem;
+    margin: 0.25rem 0;
+  }
+  /*become a member section*/
+  .member-solid-background {
+    margin: 0 auto;
+    height: 40vh;
+    padding: 3rem 2.5rem;
+    background-color: #121863;
+    color: #fff;
+  }
+  .member-solid-background h2 {
+    color: #fff;
+    font-size: 1.25rem;
+    text-align: left;
+  }
+  .member-solid-background p {
+    text-align: left;
+  }
+  .member-solid-background #email {
+    font-family: "Inter", "Arial", sans-serif;
+    width: 75vw;
+    height: 42px;
+    border: none;
+    background-color: #fff;
+    border-radius: 0.3125rem;
+    font-family: "Inter", "Arial", sans-serif;
+    color: #000;
+    padding-left: 1rem;
+    margin: 1rem 0;
+  }
+  .member-solid-background #submit {
+    display: block;
+    margin: 1rem 0;
+    font-family: "Urbanist", "Arial", sans-serif;
+    font-size: 1.125rem;
+    text-align: center;
+    color: #121863;
+    width: 9rem;
+    height: 2.75rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.3125rem;
+    border: none;
+    opacity: 0px;
+    background-color: #D8FAFF;
+  }
+  .member-solid-background #submit a {
+    text-decoration: none;
+    color: #121863;
+  }
+  .member-solid-background #submit a:hover {
+    font-weight: bold;
+  }
+  .member-background {
+    width: 100vw;
+    background-image: url(member-background.jpg);
+    background-size: cover;
+    background-repeat: none;
+  }
+  /*about & memberships*/
+  .membership-header h1 {
+    font-size: 1.5rem;
+    border-bottom: 0.3125rem solid #8B93FF;
+    padding-bottom: 1.5rem;
+  }
+  .membership-header p {
+    margin: 0px;
+    line-height: 2rem;
+  }
+  .membership-container {
+    flex-direction: column;
+    padding: 0;
+  }
+  .benefits-content,
+  .support-content {
+    padding: 1rem 4rem;
+  }
+  .membership-header {
+    padding-top: 3.5rem;
+  }
+  .membership-header img {
+    width: 100vw;
+    height: auto;
+  }
+  .membership-header-text {
+    padding: 0rem 1.75rem;
+  }
+  .membership-header-text h1 {
+    width: 16rem;
+    font-size: 1.5rem;
+    border-bottom: 0.3125rem solid #8B93FF;
+    padding-bottom: 1.5rem;
+  }
+  .membership-header-text p {
+    margin: 0px;
+    line-height: 2rem;
+    padding-bottom: 2rem;
+  }
+  .membership-button {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+  }
+  .membership-button p {
+    font-size: 1rem;
+  }
+  .membership-button-column {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 1.5rem 2rem;
+  }
+  .membership-button-column .secondary-button-outline {
+    margin: 0;
+    padding: 0;
+  }
+  .benefits-content {
+    margin: 0;
+    padding: 1rem 2rem;
+  }
+  .benefits-content ul li {
+    font-size: 0.8rem;
+    padding-right: 1rem;
+  }
+  .support-content {
+    padding: 2rem 0 6rem 2rem;
+  }
+  /*Artists*/
+  .artists-events-header {
+    padding: 5rem 2.75rem 5rem 2rem;
+  }
+  .artists-events-header h1 {
+    width: 16rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    border-bottom: 0.25rem solid #8B93FF;
+    padding-bottom: 1rem;
+  }
+  .artists-events-header .artists-events-padding-bottom {
+    padding-bottom: 1.25rem;
+  }
+  .artists-events-header p {
+    line-height: 2rem;
+  }
+  .artists-events-header .artists-container {
+    width: 100%;
+  }
+  .artists-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0rem;
+    border-bottom: 0.125rem solid #EBEBEB;
+  }
+  .artists-card img {
+    width: 100%;
+  }
+  .artists-card-text {
+    padding-left: 0.5rem;
+  }
+  .artists-events-header .container-centered, .artists-events-header.container-uncentered {
+    padding-bottom: 4rem;
+  }
+}
+/*tablet responsive*/
+@media only screen and (min-width: 486px) and (max-width: 1400px) {
+  body {
+    width: 100vw;
+  }
+  /*navigation items*/
+  .nav img {
+    height: 2rem;
+  }
+  /*menu icon*/
+  .nav .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+  }
+  .nav .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+  }
+  .nav .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    width: 18px;
+  }
+  .nav .menu-icon .navicon:before,
+  .nav .menu-icon .navicon:after {
+    background: #333;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    width: 100%;
+  }
+  .nav .menu-icon .navicon:before {
+    top: 5px;
+  }
+  .nav .menu-icon .navicon:after {
+    top: -5px;
+  }
+  /*menu button*/
+  .nav .menu-btn {
+    display: none;
+  }
+  .nav .menu-btn:checked ~ .menu {
+    max-height: 100vh;
+  }
+  .nav .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  .nav .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  .nav .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  .nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  /*footer styling*/
+  .footer-container {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 3.5rem;
+  }
+  .footer {
+    width: 100%;
+    background-color: #121863;
+    color: white;
+    padding: 0 0 3.5rem 0;
+    font-family: "Urbanist", "Arial", sans-serif;
+    text-align: center;
+  }
+  .footer .footer-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding-right: 2.5rem;
+  }
+  .footer .footer-social a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: "Urbanist", "Arial", sans-serif;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-left: 0rem;
+  }
+  .footer-links ul {
+    list-style: none;
+    margin-right: 0rem;
+  }
+  .footer-contact {
+    text-align: left;
+    padding-left: 2.5rem;
+    line-height: 2rem;
+  }
+  .footer-links ul li {
+    margin-bottom: 0;
+    text-align: left;
+  }
+  .footer-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    line-height: 2rem;
+  }
+  .footer-links ul li a:hover {
+    color: #8B93FF;
+  }
+  .footer-contact p, .footer-info p {
+    margin: 0;
+  }
+  .footer-info {
+    padding-left: 2.5rem;
+    text-align: left;
+    line-height: 2rem;
+  }
+  /*general styling*/
+  p {
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+  }
+  h1 {
+    font-size: 2.25rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  header {
+    width: 100vw;
+    margin-bottom: 10rem;
+  }
+  /*home*/
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 3rem;
+  }
+  .hero .hero-text {
+    padding: 1rem 1.75rem;
+  }
+  .hero h1 {
+    width: 30rem;
+    border-bottom: 0.2rem solid #8B93FF;
+    line-height: 3.5rem;
+    padding-bottom: 1rem;
+    font-size: 2.25rem;
+  }
+  .heroimage img {
+    width: 100vw;
+  }
+  p {
+    font-size: 1.25rem;
+  }
+  h2, h3, h4 {
+    font-size: 1.5rem;
+    font-family: "Urbanist", "Arial", sans-serif;
+    letter-spacing: 0.1rem;
+    color: #121863;
+  }
+  h2 h1, h3 h1, h4 h1 {
+    font-size: 0.75rem;
+    line-height: 2rem;
+    padding-bottom: 1rem;
+  }
+  h2 h4, h3 h4, h4 h4 {
+    font-size: 1.2rem;
+  }
+  /*button sizes*/
+  .secondary-button-filled,
+  .secondary-button-outline {
+    width: 30rem;
+    height: 3.25rem;
+    margin: 2.5rem 0 5rem;
+  }
+  .container-centered {
+    flex-direction: column;
+    justify-content: left;
+    gap: 3rem;
+  }
+  .container-uncentered {
+    flex-direction: column;
+    justify-content: left;
+    gap: 3rem;
+  }
+  .header h1 {
+    width: 10rem;
+    font-size: 2.25rem;
+    line-height: 2rem;
+    border-bottom: 0.25rem solid #8B93FF;
+  }
+  .header h1, .header p {
+    padding: 0 4rem;
+  }
+  .header p {
+    width: 22rem;
+    line-height: 1.75rem;
+  }
+  /*event card*/
+  .exhibits, .events {
+    padding: 0 1.75rem;
+  }
+  .exhibits h2, .events h2 {
+    padding-bottom: 1rem;
+  }
+  .exhibits p, .events p {
+    line-height: 1.5rem;
+  }
+  .events {
+    padding: 1.25rem 2.5rem;
+  }
+  .event-card {
+    border: none;
+    width: 30rem;
+    text-align: left;
+  }
+  .event-card p {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+  .event-card {
+    border: none;
+    width: 30rem;
+    text-align: left;
+  }
+  .event-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+  }
+  .event-header h4 {
+    line-height: 2.25rem;
+  }
+  .arrow-link {
+    color: black;
+    text-decoration: none;
+    margin-top: 0.5rem;
+  }
+  .arrow-link img {
+    width: 2rem;
+    height: auto;
+  }
+  .divider {
+    border: none;
+    border-bottom: 0.125rem solid black;
+    margin: 0.75rem 0;
+  }
+  .event-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 0.75rem;
+  }
+  .event-details p {
+    font-size: 0.875rem;
+    margin: 0.25rem 0;
+  }
+  /*become a member section*/
+  .member-solid-background {
+    margin: 0 auto;
+    height: 25vh;
+    padding: 3rem 2.5rem;
+    background-color: #121863;
+    color: #fff;
+  }
+  .member-solid-background h2 {
+    color: #fff;
+    font-size: 1.25rem;
+    text-align: left;
+  }
+  .member-solid-background p {
+    text-align: left;
+  }
+  #email {
+    font-family: "Inter", "Arial", sans-serif;
+    width: 75vw;
+    height: 3rem;
+    border: none;
+    background-color: #fff;
+    border-radius: 0.3125rem;
+    font-family: "Inter", "Arial", sans-serif;
+    color: #000;
+    padding-left: 1rem;
+    margin: 1rem 0;
+  }
+  #submit {
+    display: block;
+    margin: 1rem 0;
+    font-family: "Urbanist", "Arial", sans-serif;
+    font-size: 1.25rem;
+    text-align: center;
+    color: #121863;
+    width: 9rem;
+    height: 2.75rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.3125rem;
+    border: none;
+    opacity: 0px;
+    background-color: #D8FAFF;
+  }
+  #submit a {
+    text-decoration: none;
+    color: #121863;
+  }
+  #submit a:hover {
+    font-weight: bold;
+  }
+  .member-background {
+    width: 100vw;
+    height: 34vh;
+    background-image: url(member-background.jpg);
+    background-size: cover;
+    background-repeat: none;
+  }
+  /*about & memberships*/
+  .membership-header h1 {
+    font-size: 2.25rem;
+    border-bottom: 0.3125rem solid #8B93FF;
+    padding-bottom: 1.5rem;
+  }
+  .membership-header p {
+    margin: 0px;
+    line-height: 2rem;
+  }
+  .membership-container {
+    flex-direction: column;
+    padding: 0;
+  }
+  .benefits-content,
+  .support-content {
+    padding: 1rem 4rem;
+  }
+  .membership-header {
+    padding-top: 3.5rem;
+  }
+  .membership-header img {
+    width: 100vw;
+    height: auto;
+  }
+  .membership-header-text {
+    padding: 0rem 1.75rem;
+  }
+  .membership-header-text h1 {
+    width: 20rem;
+    font-size: 2.25rem;
+    border-bottom: 0.3125rem solid #8B93FF;
+    padding-bottom: 1.5rem;
+  }
+  .membership-header-text p {
+    margin: 0px;
+    line-height: 2rem;
+    padding-bottom: 2rem;
+  }
+  .membership-button {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+  }
+  .membership-button p {
+    font-size: 1.25rem;
+  }
+  .membership-button-column {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 1.5rem 2rem;
+  }
+  .membership-button-column .secondary-button-outline {
+    margin: 0;
+    padding: 0;
+  }
+  .benefits-content {
+    margin: 0;
+    padding: 1rem 2rem;
+  }
+  .benefits-content ul li {
+    font-size: 1.25rem;
+    padding-right: 1rem;
+    line-height: 2rem;
+  }
+  .support-content {
+    padding: 2rem 0 6rem 2rem;
+  }
+  /*Artists*/
+  .artists-events-header {
+    padding: 5rem 2.75rem 5rem 2rem;
+  }
+  .artists-events-header h1 {
+    width: 30rem;
+    font-size: 2.25rem;
+    line-height: 2rem;
+    border-bottom: 0.25rem solid #8B93FF;
+    padding-bottom: 1rem;
+  }
+  .artists-events-header .artists-events-padding-bottom {
+    padding-bottom: 1.25rem;
+  }
+  .artists-events-header p {
+    line-height: 2rem;
+  }
+  .artists-events-header .artists-container {
+    width: 100;
+  }
+  .artists-card {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 1rem 0rem;
+    border-bottom: 0.125rem solid #EBEBEB;
+  }
+  .artists-card img {
+    width: 90vw;
+    height: auto;
+  }
+  .artists-card-text {
+    padding-left: 0.5rem;
+  }
+  .artists-events-header .container-centered, .artists-events-header.container-uncentered {
+    padding-bottom: 6rem;
+  }
+}
+/*desktop responsive*/
+@media only screen and (min-width: 1401px) {
+  /*nav*/
+  body {
+    width: 100vw;
+  }
+  .nav {
+    width: 100vw;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+  }
+  .nav ul {
+    padding-right: 2rem;
+    display: flex;
+    float: right;
+  }
+  .nav li {
+    height: 100%;
+  }
+  .nav .nav li a {
+    padding: 20px 30px;
+  }
+  .nav .nav .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .nav .nav .menu-icon {
+    display: none;
+  }
+  .nav .menu-btn {
+    display: none;
+  }
+  .nav .menu-btn:checked ~ .menu {
+    max-height: 100vh;
+  }
+  .nav .logo img {
+    width: 12rem;
+    margin: 0.5rem 1rem 0 2rem;
+  }
+  /*donate button in nav*/
+  .nav .donate-button a {
+    background-color: #3B429F;
+    border-radius: 0rem 0rem 50rem 50rem;
+    color: #fff;
+    padding-bottom: 1.5rem;
+    margin: 0 2rem;
+  }
+  .nav .donate-button a:hover,
+  .nav .menu-btn:hover {
+    background-color: #6156D3;
+    border-radius: 0rem 0rem 50rem 50rem;
+    color: #F5F6FF;
+    padding-bottom: 1.5rem;
+  }
+  /*Homepage Styling*/
+  /*home*/
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 3rem;
+  }
+  .hero .hero-text {
+    width: 35vw;
+    padding: 1rem 10rem 2rem 4rem;
+    background-color: rgba(216, 250, 255, 0.9);
+    border-radius: 0 100rem 100rem 0;
+    margin-top: -33rem;
+    margin-bottom: 7rem;
+  }
+  .hero .hero-text h1 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+    width: 30rem;
+    border-bottom: 0.2rem solid #8B93FF;
+    padding-bottom: 1rem;
+  }
+  .hero .hero-text p {
+    font-size: 1rem;
+    width: 90%;
+  }
+  .heroimage img {
+    width: 100vw;
+  }
+  p {
+    font-size: 0.75rem;
+  }
+  h2, h3, h4 {
+    font-size: 1.5rem;
+    font-family: "Urbanist", "Arial", sans-serif;
+    letter-spacing: 0.1rem;
+    line-height: 2rem;
+    color: #121863;
+  }
+  h2 h1, h3 h1, h4 h1 {
+    font-size: 0.75rem;
+    line-height: 2rem;
+    padding-bottom: 1rem;
+  }
+  h2 h4, h3 h4, h4 h4 {
+    font-size: 1.2rem;
+  }
+  .secondary-button-filled,
+  .secondary-button-outline {
+    width: 32rem;
+    height: 3.25rem;
+    margin: 4rem auto;
+  }
+  .container-centered,
+  .container-uncentered {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    justify-content: center;
+  }
+  .container-centered {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 92vw;
+    gap: 8rem;
+  }
+  .container-uncentered {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 92vw;
+    gap: 8rem;
+  }
+  .event-card {
+    border: none;
+    width: 35rem;
+    height: 100%;
+    text-align: left;
+  }
+  .events, .exhibits {
+    width: 95vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .events h2, .exhibits h2 {
+    padding: 3rem 0 2rem 0;
+    width: 50%;
+  }
+  .header {
+    padding: 0;
+    flex-direction: column-reverse;
+  }
+  .header img {
+    width: 100vw;
+  }
+  .header h1 {
+    width: 10rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    border-bottom: 0.25rem solid #8B93FF;
+  }
+  .header h1, .header p {
+    padding: 0 4rem;
+  }
+  .header p {
+    width: 22rem;
+    line-height: 1.75rem;
+  }
+  .event-card {
+    border: none;
+    width: 18rem;
+    text-align: left;
+  }
+  .event-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+  }
+  .arrow-link {
+    color: black;
+    text-decoration: none;
+    margin-top: 0.5rem;
+  }
+  .divider {
+    border: none;
+    border-bottom: 0.125rem solid black;
+    margin: 0.75rem 0;
+  }
+  .event-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 0.75rem;
+  }
+  .event-details p {
+    font-size: 0.875rem;
+    margin: 0.25rem 0;
+  }
+  .circle-button {
+    display: flex;
+    background-color: #121863;
+    width: 4.7rem;
+    height: 4.7rem;
+    border-radius: 10rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .circle-button:hover {
+    background-color: #8B93FF;
+  }
+  .become-member {
+    justify-items: right;
+  }
+  .member-solid-background {
+    float: right;
+    margin: 0 11rem;
+    width: 46rem;
+    height: 45vh;
+    background-color: #121863;
+    color: #fff;
+  }
+  .member-solid-background h2 {
+    color: #fff;
+    font-size: 2.25rem;
+    padding: 3rem 5rem 0;
+    text-align: right;
+  }
+  .member-solid-background p {
+    padding: 0 5rem 1rem;
+    text-align: right;
+    font-size: 1.125rem;
+  }
+  .member-background {
+    width: 100vw;
+    height: 45vh;
+    background-image: url(member-background.jpg);
+    background-size: cover;
+    background-repeat: none;
+  }
+  #email {
+    font-family: "Inter", "Arial", sans-serif;
+    width: 460px;
+    height: 45px;
+    margin-left: 10rem;
+    border: none;
+    background-color: #fff;
+    border-radius: 0.3125rem;
+    font-family: "Inter", "Arial", sans-serif;
+    color: #000;
+    padding-left: 1.5rem;
+  }
+  #submit {
+    display: block;
+    margin-right: 5rem;
+    font-family: "Urbanist", "Arial", sans-serif;
+    font-size: 1.125rem;
+    text-align: center;
+    color: #121863;
+    width: 8rem;
+    height: 2.75rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.3125rem;
+    border: none;
+    opacity: 0px;
+    background-color: #D8FAFF;
+  }
+  #submit a {
+    text-decoration: none;
+    color: #121863;
+  }
+  #submit a:hover {
+    font-weight: bold;
+  }
+  #submit:hover {
+    cursor: pointer;
+    background-color: #8B93FF;
+  }
+  /*Memberships & About Page*/
+  .membership-header {
+    width: 100vw;
+    margin: 0 auto;
+    flex-direction: row;
+    padding-bottom: 2rem;
+  }
+  .membership-header h1 {
+    width: 26rem;
+    font-size: 1.5rem;
+    border-bottom: 0.3125rem solid #8B93FF;
+    padding-bottom: 1.5rem;
+  }
+  .membership-header p {
+    margin: 0px;
+    line-height: 2rem;
+  }
+  .membership-header img {
+    width: 100vw;
+    height: auto;
+  }
+  .about-button-fix {
+    gap: 2rem;
+  }
+  .membership-header-text h1 {
+    width: 300px;
+    font-size: 2.5rem;
+    border-bottom: 0.3125rem solid #8B93FF;
+    padding-bottom: 1.5rem;
+  }
+  .membership-header-text p {
+    margin: 0px;
+    line-height: 2rem;
+    width: 800px;
+  }
+  .membership-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  .membership-container p {
+    font-size: 1rem;
+  }
+  .membership-button {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+  .membership-button-column {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .membership-button-column button {
+    margin: 0 auto;
+  }
+  .membership-info-containter {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0rem 4rem 6rem;
+    justify-content: space-around;
+    margin-right: 2rem;
+  }
+  .benefits-content, .support-content {
+    padding: 1rem 4rem;
+    width: 100vw;
+    margin: 0 auto;
+  }
+  /*Artists*/
+  .artists-events-header {
+    width: 85vw;
+    padding: 8rem 4rem 8rem 4rem;
+  }
+  .artists-events-header h1 {
+    width: 40rem;
+    font-size: 2.5rem;
+    border-bottom: 0.3125rem solid #8B93FF;
+    padding-bottom: 2.5rem;
+  }
+  .artists-events-header .artists-events-padding-bottom {
+    padding-bottom: 3rem;
+  }
+  .artists-container {
+    width: 100%;
+    justify-items: left;
+  }
+  .artists-card {
+    display: flex;
+    padding: 2rem 3.5rem;
+    border-bottom: 0.125rem solid #EBEBEB;
+  }
+  .artists-card-text {
+    padding-left: 3.5rem;
+  }
+}
 /* Footer General Styling */
 .footer {
-  width: 100%;
+  width: 100vw;
   background-color: #121863;
   color: white;
   padding: 2rem 0;
@@ -348,16 +1392,15 @@ button {
 }
 
 .footer-container {
+  width: 100vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0 auto;
-  padding-left: 12.5rem;
-  gap: 12rem;
+  padding: 0;
 }
 
 .footer-links ul {
   list-style: none;
-  margin-right: 10rem;
 }
 
 .footer-links ul li {
@@ -373,17 +1416,9 @@ button {
   color: #8B93FF;
 }
 
-.footer-contact p, .footer-info p {
-  margin: 0.5rem 0;
-}
-
-.footer-info {
-  text-align: right;
-}
-
 .footer-divider {
   border: none;
-  border-top: 1px solid white;
+  border-top: 2px solid white;
   margin: 2rem 0;
 }
 
@@ -407,724 +1442,4 @@ button {
   color: #8B93FF;
 }
 
-/*Memberships & About Page*/
-.membership-header {
-  margin: 2rem 11.5rem 30px;
-  width: 375px;
-  flex-direction: row;
-}
-.membership-header h1 {
-  width: 26rem;
-  font-size: 1.5rem;
-  border-bottom: 0.3125rem solid #8B93FF;
-  padding-bottom: 1.5rem;
-}
-.membership-header p {
-  margin: 0px;
-  line-height: 2rem;
-}
-.membership-header img {
-  margin-right: 450px;
-}
-
-.membership-header-text {
-  padding-right: 8rem;
-}
-.membership-header-text h1 {
-  width: 300px;
-  font-size: 2.5rem;
-  border-bottom: 0.3125rem solid #8B93FF;
-  padding-bottom: 1.5rem;
-}
-.membership-header-text p {
-  margin: 0px;
-  line-height: 2rem;
-  width: 800px;
-}
-
-.membership-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.membership-button {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 2rem;
-}
-
-.membership-button-column {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-.membership-button-column button {
-  margin: 0 auto;
-}
-
-.benefits-content, .support-content {
-  padding: 2rem 12.5rem;
-}
-
-/*Artists*/
-.artists-events-header {
-  padding: 3rem 12.5rem;
-}
-.artists-events-header h1 {
-  width: 40rem;
-  font-size: 2.5rem;
-  border-bottom: 0.3125rem solid #8B93FF;
-  padding-bottom: 2.5rem;
-}
-.artists-events-header .artists-events-padding-bottom {
-  padding-bottom: 2.5rem;
-}
-
-.artists-card {
-  display: flex;
-  padding: 2rem 3.5rem;
-  border-bottom: 0.125rem solid #EBEBEB;
-}
-
-.artists-card-text {
-  padding-left: 3.5rem;
-}
-
-/*Responsive Design*/
-/*mobile*/
-@media (max-width: 36em) {
-  p {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-  h1 {
-    font-size: 1.9rem;
-  }
-  h2 {
-    font-size: 1rem;
-  }
-  p {
-    font-size: 0.8rem;
-  }
-  .header-divider {
-    width: 100%;
-    height: 2rem;
-    background-image: url(member-background.jpg);
-    background-size: cover;
-    background-repeat: none;
-  }
-  h1, h2, h3, h4 {
-    font-size: 1rem;
-    font-family: "Urbanist", "Arial", sans-serif;
-    letter-spacing: 0.1rem;
-    color: #121863;
-  }
-  h1 h1, h2 h1, h3 h1, h4 h1 {
-    font-size: 0.75rem;
-    line-height: 2rem;
-    border-bottom: 0.2rem solid #8B93FF;
-    padding-bottom: 1rem;
-  }
-  h1 h4, h2 h4, h3 h4, h4 h4 {
-    font-size: 1.2rem;
-  }
-  .nav {
-    width: 100%;
-  }
-  .nav-links li {
-    position: relative;
-    margin: 0 0.5rem;
-  }
-  .nav-links a {
-    text-decoration: none;
-    color: #121863;
-    font-size: 0.75rem;
-    padding-right: 0rem;
-    padding-left: 0.25rem;
-  }
-  /* Drop-down menu */
-  .dropdown .dropbtn {
-    display: none;
-  }
-  .navbar {
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    border-bottom: 0.0625rem solid #D6D7DD;
-  }
-  .navbar .logo {
-    width: 200px;
-  }
-  .navbar .logo a {
-    font-size: 0.8rem;
-  }
-  .secondary-button-filled,
-  .secondary-button-outline {
-    width: 100%;
-    height: 50px;
-  }
-  .container-centered,
-  .container-uncentered {
-    width: 350px;
-    display: flex;
-    flex-flow: column;
-    padding: 0;
-  }
-  .container-centered {
-    flex-direction: column;
-    justify-content: left;
-  }
-  .container-uncentered {
-    flex-direction: column;
-    justify-content: left;
-    gap: 2rem;
-    padding-left: 0.8rem;
-  }
-  .event-card {
-    border: none;
-    width: 250px;
-    text-align: left;
-    padding-bottom: 1rem;
-    padding-right: 1rem;
-  }
-  .header {
-    padding: 0;
-    flex-direction: column-reverse;
-  }
-  .header img {
-    width: 100%;
-    height: 100%;
-  }
-  .header h1 {
-    width: 10rem;
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-  .header h1, .header p {
-    padding: 0 4rem;
-  }
-  .header p {
-    width: 22rem;
-    line-height: 1.75rem;
-  }
-  .exhibits {
-    padding: 0 3rem;
-  }
-  .exhibits h2 {
-    padding: 1rem 0rem 1rem 1rem;
-  }
-  .events {
-    padding: 0 3rem;
-  }
-  .events h2 {
-    padding: 4rem 1rem 1rem 1rem;
-  }
-  .event-card {
-    border: none;
-    width: 300px;
-    text-align: left;
-  }
-  .footer-container {
-    flex-direction: column;
-    padding: 1rem;
-    gap: 3.5rem;
-  }
-  .footer {
-    width: 100%;
-    background-color: #121863;
-    color: white;
-    padding: 0 0 3.5rem 0;
-    font-family: "Inter", "Arial", sans-serif;
-    text-align: center;
-  }
-  .footer-container {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding-left: 0rem;
-  }
-  .footer-links ul {
-    list-style: none;
-    margin-right: 0rem;
-    padding-left: 4rem;
-  }
-  .footer-contact {
-    text-align: left;
-    padding-left: 4rem;
-  }
-  .footer-links ul li {
-    margin-bottom: 0;
-    text-align: left;
-  }
-  .footer-links ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-  }
-  .footer-links ul li a:hover {
-    color: #8B93FF;
-  }
-  .footer-contact p, .footer-info p {
-    margin: 0;
-  }
-  .footer-info {
-    padding-left: 4rem;
-    text-align: left;
-  }
-  .member-solid-background {
-    margin: 0 auto;
-    height: 400px;
-    background-color: #121863;
-    color: #fff;
-    padding-right: 5rem;
-  }
-  .member-solid-background h2 {
-    color: #fff;
-    font-size: 1rem;
-    padding: 3rem 0rem 0;
-    text-align: right;
-  }
-  .member-solid-background p {
-    padding: 0 0rem 1rem 25rem;
-    text-align: right;
-  }
-  .member-background {
-    width: 100%;
-    background-image: url(member-background.jpg);
-    background-size: cover;
-    background-repeat: none;
-  }
-  .membership-header {
-    margin: 2rem 4rem;
-  }
-  .membership-header h1 {
-    width: 26rem;
-    font-size: 1.5rem;
-    border-bottom: 0.3125rem solid #8B93FF;
-    padding-bottom: 1.5rem;
-  }
-  .membership-header p {
-    margin: 0px;
-    line-height: 2rem;
-    width: 100%;
-  }
-  .membership-header img {
-    margin-right: 450px;
-  }
-  .membership-container {
-    flex-direction: column;
-    padding: 0;
-  }
-  .benefits-content,
-  .support-content {
-    padding: 1rem 4rem;
-  }
-  .membership-header img {
-    width: 100%;
-    height: 100%;
-  }
-  .membership-header-text {
-    padding: 0rem 3rem;
-  }
-  .membership-header-text h1 {
-    width: 300px;
-    font-size: 2.5rem;
-    border-bottom: 0.3125rem solid #8B93FF;
-    padding-bottom: 1.5rem;
-  }
-  .membership-header-text p {
-    margin: 0px;
-    line-height: 2rem;
-    width: 25rem;
-    padding-bottom: 2rem;
-  }
-  .membership-button {
-    display: flex;
-    justify-content: space-between;
-  }
-  .membership-button-column {
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-  #email {
-    margin-left: 34rem;
-    font-family: "Inter", "Arial", sans-serif;
-    width: 175px;
-    height: 42px;
-    border: none;
-    background-color: #fff;
-    border-radius: 0.3125rem;
-    font-family: "Inter", "Arial", sans-serif;
-    color: #000;
-    padding-left: 1rem;
-  }
-  #submit {
-    display: block;
-    margin-right: 0rem;
-    font-family: "Urbanist", "Arial", sans-serif;
-    font-size: 1.125rem;
-    text-align: center;
-    color: #121863;
-    width: 8rem;
-    height: 2.75rem;
-    padding: 0.5rem 1.5rem;
-    border-radius: 0.3125rem;
-    border: none;
-    opacity: 0px;
-    background-color: #D8FAFF;
-  }
-  #submit a {
-    text-decoration: none;
-    color: #121863;
-  }
-  #submit a:hover {
-    font-weight: bold;
-  }
-  /*Artists*/
-  .artists-events-header {
-    padding: 2rem 4rem;
-  }
-  .artists-events-header h1 {
-    width: 12rem;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    border-bottom: 0.3125rem solid #8B93FF;
-    padding-bottom: 1rem;
-  }
-  .artists-events-header .artists-events-padding-bottom {
-    padding-bottom: 1.25rem;
-  }
-  .artists-events-header p {
-    line-height: 2rem;
-  }
-  .artists-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem 0rem;
-    border-bottom: 0.125rem solid #EBEBEB;
-  }
-  .artists-card img {
-    width: 100%;
-  }
-  .artists-card-text {
-    padding-left: 0.5rem;
-  }
-}
-/*tablet*/
-@media (min-width: 36em) and (max-width: 64em) {
-  .nav {
-    width: 100%;
-  }
-  .nav-links li {
-    position: relative;
-    margin: 0 0.75rem;
-  }
-  .nav-links a {
-    text-decoration: none;
-    color: #121863;
-    font-size: 1rem;
-    padding-right: 0rem;
-    padding-left: 0.25rem;
-  }
-  /* Drop-down menu */
-  .dropdown .dropbtn {
-    display: none;
-  }
-  .navbar {
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    border-bottom: 0.0625rem solid #D6D7DD;
-  }
-  .navbar .logo {
-    width: 200px;
-  }
-  .navbar .logo a {
-    font-size: 1.1rem;
-  }
-  .container-centered,
-  .container-uncentered {
-    width: 350px;
-    display: flex;
-    flex-flow: column;
-    padding: 0;
-  }
-  .container-centered {
-    flex-direction: column;
-    justify-content: left;
-  }
-  .container-uncentered {
-    flex-direction: column;
-    justify-content: left;
-    gap: 2rem;
-    padding-left: 0.8rem;
-  }
-  .event-card {
-    border: none;
-    width: 250px;
-    text-align: left;
-    padding-bottom: 1rem;
-    padding-right: 1rem;
-  }
-  .header {
-    padding: 0;
-    flex-direction: column-reverse;
-  }
-  .header img {
-    width: 100%;
-    height: 100%;
-  }
-  .header h1 {
-    width: 12rem;
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-  .header h1, .header p {
-    padding: 0 4rem;
-  }
-  .header p {
-    width: 90%;
-    line-height: 1.75rem;
-    padding: 0 4rem;
-  }
-  .exhibits {
-    padding: 0 3rem;
-  }
-  .exhibits h2 {
-    padding: 1rem 0rem 1rem 1rem;
-  }
-  .events {
-    padding: 0 3rem;
-  }
-  .events h2 {
-    padding: 4rem 1rem 1rem 1rem;
-  }
-  .event-card {
-    border: none;
-    width: 300px;
-    text-align: left;
-  }
-  .footer-container {
-    flex-direction: column;
-    padding: 1rem;
-    gap: 3.5rem;
-  }
-  .footer {
-    width: 100%;
-    background-color: #121863;
-    color: white;
-    padding: 0 0 3.5rem 0;
-    font-family: "Inter", "Arial", sans-serif;
-    text-align: center;
-  }
-  .footer-container {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding-left: 0rem;
-  }
-  .footer-links ul {
-    list-style: none;
-    margin-right: 0rem;
-    padding-left: 4rem;
-  }
-  .footer-contact {
-    text-align: left;
-    padding-left: 4rem;
-  }
-  .footer-links ul li {
-    margin-bottom: 0;
-    text-align: left;
-  }
-  .footer-links ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-  }
-  .footer-links ul li a:hover {
-    color: #8B93FF;
-  }
-  .footer-contact p, .footer-info p {
-    margin: 0;
-  }
-  .footer-info {
-    padding-left: 4rem;
-    text-align: left;
-  }
-  .member-solid-background {
-    margin: 0 auto;
-    height: 100%;
-    background-color: #121863;
-    color: #fff;
-  }
-  .member-solid-background h2 {
-    color: #fff;
-    font-size: 1rem;
-    padding: 3rem 5rem 0;
-    text-align: right;
-  }
-  .member-solid-background p {
-    padding: 0 5rem 1rem 25rem;
-    text-align: right;
-  }
-  .member-background {
-    width: 100%;
-    height: 100%;
-    background-image: url(member-background.jpg);
-    background-size: cover;
-    background-repeat: none;
-  }
-  .membership-header {
-    width: 80%;
-    margin: 2rem 4rem;
-  }
-  .membership-header h1 {
-    width: 30rem;
-    font-size: 1.5rem;
-    border-bottom: 0.3125rem solid #8B93FF;
-    padding-bottom: 1.5rem;
-  }
-  .membership-header p {
-    width: 90%;
-    margin: 0px;
-    line-height: 2rem;
-    width: 100%;
-  }
-  .membership-header img {
-    margin-right: 450px;
-    height: 100%;
-    width: 100%;
-  }
-  .membership-container {
-    width: 100%;
-    flex-direction: column;
-    padding: 0;
-  }
-  .benefits-content,
-  .support-content {
-    padding: 1rem 4rem;
-  }
-  .membership-header img {
-    width: 100%;
-    height: 100%;
-  }
-  .membership-header-text {
-    width: 100%;
-    padding: 0rem 3rem;
-  }
-  .membership-header-text h1 {
-    width: 300px;
-    font-size: 2.5rem;
-    border-bottom: 0.3125rem solid #8B93FF;
-    padding-bottom: 1.5rem;
-  }
-  .membership-header-text p {
-    margin: 0px;
-    line-height: 2rem;
-    width: 90%;
-  }
-  .membership-button {
-    display: flex;
-    justify-content: space-between;
-  }
-  .membership-button-column {
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin-left: -3.5rem;
-  }
-  #email {
-    margin-left: 23rem;
-    font-family: "Inter", "Arial", sans-serif;
-    width: 275px;
-    height: 42px;
-    border: none;
-    background-color: #fff;
-    border-radius: 0.3125rem;
-    font-family: "Inter", "Arial", sans-serif;
-    color: #000;
-    padding-left: 1rem;
-  }
-  #submit {
-    display: block;
-    margin-right: 4.5rem;
-    font-family: "Urbanist", "Arial", sans-serif;
-    font-size: 1.125rem;
-    text-align: center;
-    color: #121863;
-    width: 8rem;
-    height: 2.75rem;
-    padding: 0.5rem 1.5rem;
-    border-radius: 0.3125rem;
-    border: none;
-    opacity: 0px;
-    background-color: #D8FAFF;
-  }
-  #submit a {
-    text-decoration: none;
-    color: #121863;
-  }
-  #submit a:hover {
-    font-weight: bold;
-  }
-  /*Artists*/
-  .artists-events-header {
-    padding: 2rem 4rem;
-  }
-  .artists-events-header h1 {
-    width: 12rem;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    border-bottom: 0.3125rem solid #8B93FF;
-    padding-bottom: 1rem;
-  }
-  .artists-events-header .artists-events-padding-bottom {
-    padding-bottom: 1.25rem;
-  }
-  .artists-events-header p {
-    line-height: 2rem;
-  }
-  .artists-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem 0rem;
-    border-bottom: 0.125rem solid #EBEBEB;
-  }
-  .artists-card img {
-    width: 100%;
-  }
-  .artists-card-text {
-    padding-left: 0.5rem;
-  }
-}
-/*larger screens*/
-@media (min-width: 65em) and (max-width: 1024) {
-  .container-centered,
-  .container-uncentered {
-    width: 100%;
-  }
-  .container-centered {
-    height: 700px;
-    flex-wrap: wrap;
-    justify-content: left;
-  }
-  .container-uncentered {
-    height: 800px;
-    flex-wrap: wrap;
-    justify-content: left;
-    gap: 2rem;
-    padding-left: 0.8rem;
-  }
-}/*# sourceMappingURL=style.css.map */
+/*large desktop responsive*//*# sourceMappingURL=style.css.map */
